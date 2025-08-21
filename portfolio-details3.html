@@ -124,8 +124,14 @@
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="200">
               <h2>Osiloskop için Yüksek Hassasiyetli Akım Ölçüm Modülü</h2>
               <p>
-                Osiloskoptan akım sinyali izleyebilmek için geniş bant aralığına sahip, ±50A ölçüm yapabilen
-                modül tasarımı ve üretimi yapıldı. 
+                Bu proje kapsamında, osiloskop üzerinden gerçek zamanlı akım dalga formlarının izlenebilmesi amacıyla, 
+                ±50A ölçüm kapasitesine ve 5 MHz bant genişliğine sahip bir akım ölçüm modülü tasarlanmış ve üretilmiştir. 
+                Yüksek frekanslı akım bileşenlerini doğru şekilde algılayabilmek için, 5 MHz bant genişliğine sahip ACS37030 Hall effect akım sensörü 
+                ve rail-to-rail giriş/çıkış özellikli, 200 MHz bant genişliğine sahip TLV3542 opamp kullanılmıştır. Devre, micro-USB üzerinden 5 V ile 
+                beslenmekte olup, gerekli olan 3,3 V besleme için düşük gürültülü bir regülatör entegre edilmiştir. Opamp, fark alıcı yükselteç konfigürasyonunda 
+                çalıştırılmış; akım sensörünün analog çıkışındaki sinyal, sensör referans geriliminden çıkarılarak osiloskopta 50 mV/A hassasiyetinde 
+                izlenebilecek şekilde kazanç değeri ayarlanmıştır. Ek olarak, opamp girişine offset gerilimi uygulanarak negatif akım değerlerinin de 
+                okunabilmesi sağlanmıştır. Osiloskop bağlantısı için BNC konnektör kullanılmıştır. Modülün tüm şematik ve PCB tasarımları ise tarafımdan KiCad kullanılarak gerçekleştirilmiştir.
               </p>
             </div>
           </div>
@@ -160,5 +166,6 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+
 
 </html>
